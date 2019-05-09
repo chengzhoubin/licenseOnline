@@ -1,0 +1,38 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "Express web app using MVC (no views yet)",
+  "main": "app.js",
+  "dependencies": {
+    "express": "latest",
+    "lodash": "latest",
+    "lodash.find": "latest",
+    "mongoose": "latest",
+    "nedb": "latest",
+    "node-rsa": "^1.0.5",
+    "snowflake": "^0.1.2",
+    "string-format": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node-express"
+  },
+  "keywords": [
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "web",
+    "chat",
+    "app",
+    "jQuery",
+    "seed",
+    "data"
+  ],
+  "author": "Denise Case",
+  "license": "MIT",
+  "devDependencies": {}
+}

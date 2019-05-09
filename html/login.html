@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>License审批管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="bootstrap-dist/css/bootstrap.min.css" />
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="bootstrap-dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" media="screen" href="css/style.css">
+	</head>
+	<style type="text/css">
+		.container_center {
+			width: 40%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: #fff;
+			border-radius: 20px;
+		}
+		
+		.m-topbtm {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		
+		.login_btn {
+			margin-bottom: 50px;
+		}
+		
+		@media only screen and (min-width: 100px) and (max-width:750px) {
+			.container_center {
+				width: 80%;
+			}
+			.logo {
+				width: 150px;
+				margin-left: 25%;
+			}
+			.m-topbtm {
+				padding: 5px;
+			}
+			.m-topbtm>label {
+				margin-bottom: 10px;
+			}
+			.login_btn {
+				margin-right: 10px;
+				margin-bottom: 40px;
+			}
+		}
+	</style>
+
+	<body>
+		<!-- 登录 -->
+		<div class="login container_center">
+			<div class="center_content">
+
+				<form action="" class="form-horizontal">
+					<div class="form-group m-topbtm" style="margin-top: 30px;margin-bottom: 20px;">
+						<label for="" class="control-label col-sm-4"></label>
+						<div class="col-sm-6">
+							<img src="img/dmsca.png" alt="logo" class="logo img-responsive text-center" />
+
+						</div>
+					</div>
+
+					<div class="form-group m-topbtm">
+						<label for="" class="control-label col-sm-3">账号：</label>
+						<div class="col-sm-6">
+							<input type="text" name="" id="" class="form-control" placeholder="请输入账号" />
+						</div>
+					</div>
+
+					<div class="form-group m-topbtm">
+						<label for="" class="control-label col-sm-3">密码：</label>
+						<div class="col-sm-6">
+							<input type="text" name="" id="" class="form-control" placeholder="请输入密码" />
+						</div>
+					</div>
+					<div class="form-group m-topbtm">
+						<label for="" class="control-label col-sm-3">验证码：</label>
+						<div class="col-sm-3">
+							<input type="text" name="" id="" class="form-control" placeholder="请输入验证码" />
+						</div>
+						<div class="col-sm-3">
+							<img src="img/logo_001.png" alt="" />
+						</div>
+					</div>
+
+					<div class="form-group text-right ">
+						<label for="qname" class="control-label col-sm-3"></label>
+						<div class="col-sm-6 login_btn">
+							<button type="button" class="btn btn-info">登录</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+
+		<!-- particles.js 背景容器 -->
+		<div id="particles-js" style="background: #169cbe;"></div>
+
+		<!-- 生成粒子背景 -->
+		<script src="js/particles.min.js"></script>
+		<script src="js/bgGeneration.js"></script>
+
+	</body>
+
+</html>

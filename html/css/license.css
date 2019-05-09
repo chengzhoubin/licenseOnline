@@ -1,0 +1,151 @@
+/*index*/
+
+.index_header {
+			height: 100px;
+			background: #169cbe;
+			margin-bottom: 30px;
+		}
+		
+		.index_header>img {
+			max-width: 100%;
+			height: auto;
+			padding-top: 20px;
+			padding-left: 5px;
+		}
+		
+		.nav-tabs {
+			border-bottom: 1px solid #ddd;
+			width: 200px;
+			height: 100%;
+		}
+		
+		.nav-tabs>li.active>a,
+		.nav-tabs>li.active>a:focus,
+		.nav-tabs>li.active>a:hover {
+			color: white;
+			cursor: default;
+			border: 1px solid #ddd;
+			border-bottom-color: transparent;
+			background: #169cbe;
+		}
+		
+		.nav-tabs>li {
+			float: none;
+			margin-bottom: -1px;
+		}
+		
+		thead {
+			background: #169cbe;
+		}
+		
+		@media only screen and (min-width: 100px) and (max-width: 750px) {
+			.nav-tabs {
+				border-bottom: 1px solid #ddd;
+				width: 100% !important;
+			}
+			.tab-content {
+				width: 100% !important;
+			}
+		}
+		
+		.mask {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			opacity: .4;
+			filter: alpha(opacity=40);
+			display: none;
+			z-index: 999;
+		}
+		
+		.approval_pop {
+			width: 700px;
+			height: 500px;
+			overflow: auto;
+			box-shadow: 0 0 8px #666;
+			position: fixed;
+			left: 25%;
+			top: 10%;
+			background-color: #fff;
+			display: none;
+			font-size: 12px;
+			z-index: 999;
+		}
+		
+		.approval_pop_title {
+			background: #169cbe;
+			height: 40px;
+			line-height: 40px;
+			padding: 0 10px;
+			color: #F9F9F9;
+			margin-bottom: 20px;
+		}
+		
+		.time {
+			cursor: pointer;
+			display: inline-block;
+			width: 20px;
+			line-height: 40px;
+		}
+		
+		.email_btn {
+			margin-right: 63px;
+			margin-bottom: 30px;
+		}
+		
+		.btn_interval {
+			margin: 0 10px;
+		}
+		
+		.floatl {
+			float: left;
+		}
+		
+		.floatr {
+			float: right;
+		}
+		
+		.logo_img {
+			padding-left: 5px;
+			line-height: 100px;
+		}
+		
+		.title_p {
+			height: 30px;
+			line-height: 30px;
+			color: wheat;
+			font-size: 15px;
+			border: 1px solid #eee;
+			padding-left: 10px;
+			background: #5bc0de;
+			box-sizing: border-box;
+		}
+		
+		.condition {
+			border: 1px solid #eee;
+			width: 85%;
+			margin-left: 5% !important;
+			margin-top: 1%;
+		}
+		
+		.options label {
+			width: 20%;
+			text-align: center;
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+		
+		.user_options>.form-group {
+			width: 32%;
+			display: inline-block;
+		}
+		
+		.input_80 {
+			width: 80px !important;
+		}
+		
+/*index ed*/
+
