@@ -10,7 +10,7 @@ module.exports = {
                 hostname: process.env.HOSTNAME || 'localhost',
               },
               database: {
-                url: 'mongodb://localhost/express-development',
+                url: 'mongodb://192.168.10.113:27017/local',
               },
               email:{
                 smtpServer:"",

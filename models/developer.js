@@ -58,4 +58,4 @@ const DeveloperSchema = new mongoose.Schema({
   }
 
 })
-module.exports = mongoose.model('Developer', DeveloperSchema)
+module.exports = DeveloperSchema;//mongoose.model('Developer', DeveloperSchema)

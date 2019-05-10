@@ -11,7 +11,18 @@ api.get('/find',(req,res) => {
 //license申请
 api.post("/apply",(req,res) => {
     res.setHeader('Content-Type', 'application/json')
-    //JSON.stringify req.body
+    //var ts = new Promise()
+    Promise.resolve().then(()=>{
+        var ret = {
+            call:true
+        } 
+        res.send(JSON.stringify(ret))   
+    })
+    
+    //console.log(req.body)
+    
 })
+
+module.exports = api
 
 

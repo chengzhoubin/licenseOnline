@@ -28,7 +28,57 @@ app.use('/html', express.static(path.join(__dirname, 'html')));
 
 const routing = require('./routes/router.js')
 app.use('/', routing)  // load routing
+/*
+var aa = function(){
 
+}
+
+console.log(aa.constructor.name);
+*/
+const developSchema = require('./models/developer')
+const mongooseDb = require("mongoose")
+console.log(env.database.url)
+var db = mongooseDb.createConnection(env.database.url,{useNewUrlParser:true})
+let develop = db.model('Develop', developSchema)
+/*
+let demo = new develop({
+  "_id": 99,
+  "email": "dcase@nwmissouri.edu",
+  "given": "Denise",
+  "family": "Case",
+  "city": "Maryville",
+  "state": "MO",
+  "zip": 64468,
+  "country": "USA",
+  "URL": "https://www.nwmissouri.edu/csis/directory/case.htm"
+})
+demo.save((err) => {
+  console.log(err)
+})
+*/
+/*
+develop.$where('this.email === "dcase@nwmissouri.edu"' ).exec((err,res)=>{
+  console.log(res);
+})
+*/
+/*
+develop
+  .where('_id').gte(100)
+  .or([{email:'dcase@nwmissouri.edu'}])
+  .select('email given')
+  .exec((err,res)=>{
+  console.log(res);
+});
+*/
+
+develop.updateOne({_id:99},{'$set':{'email':'dcase@nwmissouri.edu1.com'}},(err,raw)=>{
+  console.log(raw);
+});
+/*
+develop.update({_id:99},{'$set':{'email':'dcase@nwmissouri.edu.com'}}).exec((err,res)=>{
+  console.log(res);
+});
+*/
 server.listen(port, hostname, () => {
   // Tell the user where to find the app (use backtics with variables)
   console.log(`App running at http://${hostname}:${port}/`)
