@@ -42,15 +42,15 @@ var db = mongooseDb.createConnection(env.database.url,{useNewUrlParser:true})
 let develop = db.model('Develop', developSchema)
 /*
 let demo = new develop({
-  "_id": 99,
-  "email": "dcase@nwmissouri.edu",
-  "given": "Denise",
-  "family": "Case",
+  "_id": 100,
+  "email": "dcase100@nwmissouri.edu",
+  "given": "Denise100",
+  "family": "Case100",
   "city": "Maryville",
   "state": "MO",
-  "zip": 64468,
+  "zip": 64467,
   "country": "USA",
-  "URL": "https://www.nwmissouri.edu/csis/directory/case.htm"
+  "URL": "https://www.nwmissouri.edu/csis/directory/case100.htm"
 })
 demo.save((err) => {
   console.log(err)
@@ -70,15 +70,24 @@ develop
   console.log(res);
 });
 */
-
-develop.updateOne({_id:99},{'$set':{'email':'dcase@nwmissouri.edu1.com'}},(err,raw)=>{
+/*
+develop.updateOne({_iid:99},{'$set':{'email':'dcase@nwmissouri.edu2.com'}},(err,raw)=>{
+  console.log(err||{exp:"123"});
+  console.log(typeof(err));
   console.log(raw);
 });
+*/
 /*
 develop.update({_id:99},{'$set':{'email':'dcase@nwmissouri.edu.com'}}).exec((err,res)=>{
   console.log(res);
 });
 */
+
+var deletedResult = develop.remove({_id:101},(err)=>{
+  console.log(err);
+});
+console.log(deletedResult.n);
+
 server.listen(port, hostname, () => {
   // Tell the user where to find the app (use backtics with variables)
   console.log(`App running at http://${hostname}:${port}/`)
