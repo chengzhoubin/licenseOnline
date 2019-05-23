@@ -6,10 +6,10 @@ utestA.prototype.testA = function(){
 
 }
 
-var ut1 = new utestA();
-ut1.prototype.test1 = function(){
+//var ut1 = new utestA();
+//ut1.prototype.test1 = function(){
   
-}
+//}
 
 var father = function() { 
     this.age = 52; 
@@ -120,7 +120,16 @@ console.log(mySet.has(2));
 var date1;
 console.log(typeof(date1))
 
+var user1 = {
+  name:"",
+  pwd:""
+}
+var x1 = Object.create(user1,{
+  
+});
+var x2 = Object.create(user1);
 
+console.log(x1.__proto__ == x2.__proto__)
   
 
 
