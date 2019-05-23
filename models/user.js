@@ -2,6 +2,7 @@
     管理员模型
 */
 const mongoose = require('mongoose')
+const basicReposity = require('../utils/entityReposity')
 const applySchema = new mongoose.Schema({
       _id: {
         type: Number,
@@ -20,4 +21,10 @@ const applySchema = new mongoose.Schema({
         required: true
       }
 });
-module.exports = mongoose.model('Apply', applySchema);
+class entUser extends basicReposity{
+  constructor(){
+    super();
+    this.monogo_collection = "User";
+  }
+}
+module.exports = entUser;

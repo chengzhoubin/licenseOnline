@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-undef */
 /**
  * @file app.js
  * The starting point of the application.
@@ -6,6 +8,7 @@
  * 
  * The server-side app starts and begins listening for events.
  **/
+// eslint-disable-next-line no-undef
 const http = require('http')  // use require to import the Node.js http package
 const express = require('express')  // require Express framework
 const app = express()  // create an Express web app
@@ -83,10 +86,10 @@ develop.update({_id:99},{'$set':{'email':'dcase@nwmissouri.edu.com'}}).exec((err
 });
 */
 
-var deletedResult = develop.remove({_id:101},(err)=>{
-  console.log(err);
+var deletedResult = develop.remove({_id:101},(err,raw)=>{
+    console.log(raw);
 });
-console.log(deletedResult.n);
+//console.log(deletedResult.n);
 
 server.listen(port, hostname, () => {
   // Tell the user where to find the app (use backtics with variables)

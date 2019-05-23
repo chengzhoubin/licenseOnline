@@ -3,6 +3,13 @@ const nodeRsa = require('node-rsa');
 const strformat = require('string-format');
 const snowflake = require('snowflake');
 
-module.exports = {
-
+class rsahelper{
+    //rsa加密
+    static encryption(clearText,encryptoCallbackFunc){
+        let encrypString = "";
+        if(typeof(encryptoCallbackFunc) !== "undefined"){
+            encryptoCallbackFunc(encrypString);
+        }
+        return "";
+    }
 }

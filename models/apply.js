@@ -2,6 +2,7 @@
     申请模型
 */
 const mongoose = require('mongoose')
+const basicReposity = require('../utils/entityReposity')
 const applySchema = new mongoose.Schema({
       _id: {
         type: Number,
@@ -40,4 +41,12 @@ const applySchema = new mongoose.Schema({
         required: false
       }
 });
-module.exports = mongoose.model('Apply', applySchema);
+
+class entApply extends basicReposity{
+    constructor(environment){
+      
+      super();
+      this.monogo_collection = "Apply";
+    }
+}
+module.exports = entApply;

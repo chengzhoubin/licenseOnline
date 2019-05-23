@@ -28,6 +28,10 @@ router.get('/newpage', (req, res, next) => {
   console.log('Request to /newpage')
   res.sendFile(path.join(__dirname, '../public/sample.html'))
 })
+router.get('/html', (req, res, next) => {
+  console.log('Request to /License')
+  res.sendFile(path.join(__dirname, '../html/login.html'))
+})
 
 
 // Defer path requests to a particular controller

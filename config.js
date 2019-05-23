@@ -14,6 +14,8 @@ module.exports = {
               },
               email:{
                 smtpServer:"",
+                port:"",
+                secure:false,
                 smtpUser:"",
                 smtpPassword:"",
                 from:""                
@@ -28,10 +30,12 @@ module.exports = {
               url: 'mongodb://localhost/express-test',
             },
             email:{
-                smtpServer:"",
-                smtpUser:"",
-                smtpPassword:"",
-                from:""                
+              smtpServer:"",
+              port:"",
+              secure:false,
+              smtpUser:"",
+              smtpPassword:"",
+              from:""                 
               }
         },
         production: {
@@ -43,10 +47,12 @@ module.exports = {
               url: 'mongodb://mongo:27017/express-production',
             },
             email:{
-                smtpServer:"",
-                smtpUser:"",
-                smtpPassword:"",
-                from:""                
+              smtpServer:"",
+              port:"",
+              secure:false,
+              smtpUser:"",
+              smtpPassword:"",
+              from:""                   
               }
         }
     },
@@ -54,5 +60,9 @@ module.exports = {
         evnDevelopment:"development",
         evnTest:"test",
         production:"production"
+    },
+    modelKeyValue:{
+      entUserKey:"User",
+      entApplyKey:"Apply"
     }
-}
+  }
