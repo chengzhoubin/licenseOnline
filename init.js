@@ -1,3 +1,6 @@
+'use strict'
+import * as express from 'express'
+import * as user from './test2.js'
 function utestA(){
 
 }
@@ -130,6 +133,9 @@ var x1 = Object.create(user1,{
 var x2 = Object.create(user1);
 
 console.log(x1.__proto__ == x2.__proto__)
+
+
+
   
 
 
