@@ -10,7 +10,7 @@
     "express-session": "^1.16.1",
     "lodash": "latest",
     "lodash.find": "latest",
-    "mongoose": "^5.5.11",
+    "mongoose": "^5.7.5",
     "nedb": "latest",
     "node-rsa": "^1.0.5",
     "nodemailer": "^6.1.1",
